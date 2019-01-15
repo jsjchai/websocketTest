@@ -8,7 +8,7 @@ function sayHello() {
 	    console.log("This browser does not support WebSocket!");
 	    return;
 	} 
-	var url = "ws://localhost:8080/websocketDemo/hello";
+	var url = "ws://127.0.0.1:18888/hello";
 	writeMessageToScreen("Connecting to " + url);
 	ws = new WebSocket(url);
 	ws.onopen = function(event) {
@@ -24,7 +24,7 @@ function sayHello() {
 
 	ws.onerror = function(event) {
 		writeMessageToScreen("Occur Error:<span style='color:red'>"
-				+ event.data + "</span>");
+				+ event + "</span>");
 		ws.close();
 	}
 }
