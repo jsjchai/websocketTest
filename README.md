@@ -1,4 +1,6 @@
 # websocketTest
 websocket学习
 
-jetty 
+jetty websocket client-impl
+
+tyrus-standalone-client实现websocket client
